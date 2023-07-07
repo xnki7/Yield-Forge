@@ -115,16 +115,39 @@ function App() {
       </div>
 
       <div className="appBody">
-        <div className="marketContainer">
+        <div className="marketContainer" style={{height: "max-content", paddingBottom: "2vh"}}>
           <div className="subContainer">
-            <span>
-              <img className="logoImg" src="eth-logo.webp" />
+            <span
+              style={{
+                backgroundColor: "white",
+                padding: "1vh",
+                marginRight: "1vw",
+              }}
+            >
+              <Bank style={{ color: "black", fontSize: "2rem" }} />
             </span>
-            <span className="marketHeader">Ethereum Market</span>
+            <span className="marketHeader">Polygon Market</span>
           </div>
 
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-6" style={{marginTop: "1vh"}}>
+              <div
+                onClick={() => openStakingModal(2, "5%")}
+                className="marketOption"
+              >
+                <div className="glyphContainer hoverButton">
+                  <span className="glyph">
+                    <Coin />
+                  </span>
+                </div>
+                <div className="optionData">
+                  <span>2 Days</span>
+                  <span className="optionPercent">5%</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-md-6" style={{marginTop: "1vh"}}>
               <div
                 onClick={() => openStakingModal(30, "7%")}
                 className="marketOption"
@@ -141,7 +164,7 @@ function App() {
               </div>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-md-6" style={{marginTop: "2vh"}}>
               <div
                 onClick={() => openStakingModal(90, "10%")}
                 className="marketOption"
@@ -158,7 +181,7 @@ function App() {
               </div>
             </div>
 
-            <div className="col-md-4">
+            <div className="col-md-6" style={{marginTop: "2vh"}}>
               <div
                 onClick={() => openStakingModal(180, "12%")}
                 className="marketOption"
@@ -197,7 +220,14 @@ function App() {
               <div className="row">
                 <div className="col-md-2">
                   <span>
-                    <img className="stakedLogoImg" src="eth-logo.webp" />
+                    <PiggyBank
+                      style={{
+                        color: "white",
+                        fontSize: "2rem",
+                        marginBottom: "1vh",
+                        fontWeight: "500",
+                      }}
+                    />
                   </span>
                 </div>
                 <div className="col-md-2">{a.percentInterest} %</div>
