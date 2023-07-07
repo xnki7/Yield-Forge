@@ -1,3 +1,46 @@
+<br/>
+<p align="center">
+  <a href="https://github.com/xnki7/Yield-Forge">
+    <img src="https://yield-forge.vercel.app/static/media/Yield-Forge-transparent-1.6aec760b81d8a00af320.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <p align="center">
+    Unleash the Power of Yield with Yield Forge, your Gateway to Crypto Staking Success!
+    <br/>
+    <br/>
+  </p>
+</p>
+
+
+
+## About The Project
+
+![07 07 2023_22 07 23_REC](https://github.com/xnki7/Yield-Forge/assets/92376931/0918235f-3a9b-4d7d-8d35-7fb5e269544e)
+
+
+Yield Forge is an innovative crypto staking platform that empowers users to maximize their earnings by staking their Polygon Mumbai MATIC tokens. Our platform offers a seamless and secure way for individuals to participate in the staking ecosystem and earn interest based on the duration of their stake.
+
+At Yield Forge, we understand the importance of providing a user-friendly experience while ensuring the highest level of security for our users' assets. By leveraging the power of the Polygon network, we offer fast and cost-effective transactions, enabling users to stake their MATIC tokens without worrying about excessive gas fees or network congestion.
+
+Staking with Yield Forge is straightforward and flexible. Users can stake their MATIC tokens for a specific period, ranging from days to weeks or even months, depending on their investment strategy and desired returns. The longer the staking duration, the higher the interest earned, rewarding users for their commitment.
+
+Our platform employs cutting-edge algorithms to calculate the interest earned on staked tokens accurately. Users can easily track their staking progress, view real-time rewards, and monitor their overall portfolio performance through our intuitive and user-friendly dashboard.
+
+Security is our utmost priority at Yield Forge. We have implemented robust security measures, including multi-factor authentication and cold storage for user funds, to ensure the safety of our users' assets. Our smart contract has undergone rigorous audits to provide peace of mind and build trust within our community.
+
+Join Yield Forge today and unlock the potential of your MATIC tokens. Stake with confidence, earn passive income, and forge a path to financial growth in the exciting world of crypto staking. Experience the power of Yield Forge and embark on your journey to financial freedom.
+
+## Built With
+
+Built this dApp with the following tools and tech:-
+
+* [React.js]()
+* [Ethers.js]()
+* [Hardhat]()
+* [Solidity]()
+* [Polygon Mumbai Testnet]()
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
