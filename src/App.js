@@ -2,25 +2,26 @@ import "./App.css";
 import react, { useState, useEffect } from "react";
 import { ethers } from "ethers";
 import { contractAddress, contractABI } from "./constant";
+import NavBar from "./components/Navbar";
 
 function App() {
-  // general
+  // general states
   const [provider, setProvider] = useState(undefined);
   const [signer, setSigner] = useState(undefined);
   const [contract, setContract] = useState(undefined);
   const [signerAddress, setSignerAddress] = useState(undefined);
 
-  // assets
+  // asset == Position (in contract)
   const [assetIds, setAssetIds] = useState([]);
   const [assets, setAssets] = useState([]);
 
-  // staking
+  // staking related states
   const [showStakeModal, setShowStakeModal] = useState(false);
   const [stakingLength, setStakingLength] = useState(undefined);
   const [stakingPercent, setStakingPercent] = useState(undefined);
   const [amount, setAmount] = useState(0);
 
-  // helpers
+  // helpers functions
   const toWei = (ether) => ethers.utils.parseEther(ether);
   const toEther = (wei) => ethers.utils.formatEther(wei);
 
@@ -86,6 +87,7 @@ function App() {
     setAssetIds(assetIds);
 
     getAssets(assetIds, signer);
+    console.log(signerAddress);
   };
 
   const openStakingModal = (stakingLength, stakingPercent) => {
@@ -104,7 +106,13 @@ function App() {
     contract.connect(signer).closePosition(positionId);
   };
 
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <div>
+        <NavBar isConnected={isConnected} connect={connectAndLoad} />
+      </div>
+    </div>
+  );
 }
 
 export default App;
